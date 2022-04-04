@@ -1,0 +1,8 @@
+version: '3'
+services:
+   app:
+     container_name: app_container
+     image: "my-app-prod:$BUILD_TAG"
+     build:
+       context: .
+       dockerfile: Dockerfile-java 

@@ -1,0 +1,5 @@
+FROM tomcat:8.5.77-jre8-openjdk-slim
+
+COPY ./*jar /app/app.jar
+
+CMD java -jar /app/app.jar
