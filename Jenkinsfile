@@ -12,7 +12,7 @@ pipeline {
 	  
 	  }
 	  
-	  stage ('Test') {
+      stage ('Test') {
 	     steps {
 		 sh './jenkins/test/maven.sh mvn test'
 		 
@@ -20,7 +20,7 @@ pipeline {
 	  
 	  }
      
-	  stage ('Push') {
+      stage ('Push') {
 	     steps {
 		 sh './jenkins/push/push.sh'
 		 
